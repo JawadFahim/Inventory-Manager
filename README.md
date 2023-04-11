@@ -1,6 +1,18 @@
-# Inventory-Manager
-This code is intended to perform various activity in an inventory, including product and workers
-The code takes input of product name, serial, company name and details of worker. All of this works have been done using file system, for people who can not use a separate database system. 
-This code has 2 different file. Create two .txt file in your pc, copy the link and paste it. Make a product file and another worker file. Product file for methods that deal with product and worker file in the methods that deal with worker
+## Getting Started
 
-This code is my first year final project. Had a great problem to build this because everyone was using a seperate database system which I could not use. 
+Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+
+## Folder Structure
+
+The workspace contains two folders by default, where:
+
+- `src`: the folder to maintain sources
+- `lib`: the folder to maintain dependencies
+
+Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+
+> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+
+## Dependency Management
+
+The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
