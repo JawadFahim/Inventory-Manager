@@ -1,7 +1,8 @@
+
 import java.io.*;
 import java.util.Scanner;
 
-public class ProInfo {
+public class ProInfo implements DemoPro{
     public static int count;
     private Worker[] theWorkers = new Worker[50];
     private String filePath = "C:\\Users\\suve5\\Downloads\\StockPro Demo\\inventory.txt";//addworker's filepath
@@ -22,7 +23,8 @@ public class ProInfo {
         System.out.println("Press 3 to Show All Products.");
         System.out.println("Press 4 to Register Worker.");
         System.out.println("Press 5 to Show All Registered Workers.");
-        System.out.println("Press 6 to Access existing product quantity ");
+        System.out.println("Press 6 to Check In products ");
+        System.out.println("Press 7 to Check Out products ");
         System.out.println(
                 "-------------------------------------------------------------------------------------------------------");
     }
@@ -176,12 +178,12 @@ public class ProInfo {
     // Method 6
     // To edit the Product
     public void addProduct(Productset p) {
-        for (int i = 0; i < count; i++) {
+       /* for (int i = 0; i < count; i++) {
             if (p.pName.equalsIgnoreCase(thepros[i].pName)) {
                 System.out.println("Product with name " + p.pName + " is already in the inventory.");
                 return;
             }
-        }
+        }*/
 
         if (count < 50) {
             try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath, true))) {
